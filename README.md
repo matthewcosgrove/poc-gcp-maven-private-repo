@@ -36,7 +36,7 @@ To complete the set up the `server` configuration also needs to be added in `~/.
 > If you do not add the additional server config below you will see a build failure when you try to `mvn deploy` with this message  `org.apache.maven.wagon.providers.http.httpclient.impl.auth.HttpAuthenticator handleAuthChallenge
 WARNING: Malformed challenge: Authentication challenge is empty`
 
-Various workarounds for the `WARNING: Malformed challenge` were considered and attempted which are best described [here](http://stackoverflow.com/questions/1280747/accessing-an-artifactory-maven-repo-that-requires-basic-auth) with the only working solution coming from [this answer](http://stackoverflow.com/a/10985349/752167)
+Various workarounds for the `WARNING: Malformed challenge` were considered and attempted which are best described [here on Stack Overflow](http://stackoverflow.com/questions/1280747/accessing-an-artifactory-maven-repo-that-requires-basic-auth) and [here on MyMavenRepo.com](https://mymavenrepo.com/docs/maven.auth.html). The only working solution so far coming from [this answer on StackOverflow](http://stackoverflow.com/a/10985349/752167)
 
 It is necessary to configure Basic Auth in the `httpHeaders` section within the `server` config below. It matches the config of the private repo from the [users.txt](https://github.com/renaudcerrato/appengine-maven-repository/blob/master/src/main/webapp/WEB-INF/users.txt) file where the credentials should be changed during the install of the private repo to GCP.
 
