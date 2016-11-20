@@ -4,6 +4,8 @@ This project is created as a PoC of deploying a Spring Boot app with a Maven set
 
 It was created by selecting a Maven project from http://start.spring.io/ (it's bare bones without any additional dependencies added)
 
+For the Gradle equivalent see [poc-gcp-gradle-private-repo](https://github.com/matthewcosgrove/poc-gcp-gradle-private-repo)
+
 There are customisations mentioned in the Maven Configuration section which are specifically for Maven 3.3.9. When testing with Maven 3.3.3, the HTTP Header customisations detailed below were not required, but most of the instructions are still valid. This is further clarified below.
 
 ### Maven Configuration
