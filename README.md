@@ -56,7 +56,7 @@ For Maven 3.3.9, it is necessary to configure Basic Auth in the `httpHeaders` se
     </configuration>
 </server>
 ```
-> While credentials within the `~/.m2/settings.xml` are are outside the project and therefore safer from being exposed into version control, it is better to take advantage of features Maven provides for encrypting as described in their official [docs](https://maven.apache.org/guides/mini/guide-encryption.html)
+> While credentials within the `~/.m2/settings.xml` are outside the project and therefore safer from being exposed into version control, it is better to take advantage of features Maven provides for encrypting as described in their official [docs](https://maven.apache.org/guides/mini/guide-encryption.html)
 
 With all the config now in place, deploying snapshot artifacts to your private repository can be done via
 
